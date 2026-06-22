@@ -36,7 +36,7 @@ export default function DecryptedText({
     ...props
 }: DecryptedTextProps & { animateOn?: 'hover' | 'view' | 'both' }) {
     const [displayText, setDisplayText] = useState<string>(text)
-    const [isHovering, setIsHovering] = useState<boolean>(false)
+
     const [isScrambling, setIsScrambling] = useState<boolean>(false)
     const [revealedIndices, setRevealedIndices] = useState<Set<number>>(new Set())
     const [hasAnimated, setHasAnimated] = useState<boolean>(false)
@@ -221,7 +221,7 @@ export default function DecryptedText({
             <span aria-hidden="true">
                 {displayText.split('').map((char, index) => {
                     const isRevealedOrDone =
-                        revealedIndices.has(index) || !isScrambling || !isHovering
+                        revealedIndices.has(index) || !isScrambling || !shouldAnimate
 
                     return (
                         <span
