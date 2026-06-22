@@ -199,12 +199,12 @@ export default function Home() {
                 className="custom-spotlight-card w-full max-w-[320px] md:w-80 h-auto min-h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
                 spotlightColor="rgba(7, 91, 94, 0.6)"
               >
-                <h2 className="text-lg font-semibold mb-1">Scalable E-Commerce Analytics Pipeline"</h2>
+                <h2 className="text-lg font-semibold mb-1">Scalable E-Commerce Analytics Pipeline</h2>
                 <p className="mb-3 text-sm text-gray-300 flex-1">
                   Built an end-to-end analytics pipeline using PySpark, Azure Databricks, SQL, and Power BI to process 100,000+ e-commerce transactions and visualize revenue, customer behavior, and business KPIs.
                 </p>
                 <br />
-                <p>tech: "PySpark | Azure Databricks | SQL | Power BI", </p>
+                <p>tech: &quot;PySpark | Azure Databricks | SQL | Power BI&quot;, </p>
                 <a
                   href="https://github.com/sud0-Su1/ScalablePIpM1"
                   target="_blank"
@@ -224,7 +224,7 @@ export default function Home() {
                   Analyzed customer lifecycle and churn patterns using SQL, PySpark, Azure, and Power BI. Built dashboards to track churn rate, retention rate, and customer lifetime value for business decision-making.
                 </p>
                 <br />
-                <p>tech: "Spark | SQL | Azure | Power BI | Databricks", </p>
+                <p>tech: &quot;Spark | SQL | Azure | Power BI | Databricks&quot;, </p>
                 <a
                   href="https://github.com/sud0-Su1/PipelineCustomerRetention"
                   target="_blank"
@@ -244,7 +244,7 @@ export default function Home() {
                   Analyzed 50,000+ customer reviews using Python, Pandas, text preprocessing, and Power BI to identify sentiment trends, customer preferences, and satisfaction drivers.
                 </p>
                 <br />
-                <p>tech: "Python | Pandas | Power BI | AWS | SageMaker", </p>
+                <p>tech: &quot;Python | Pandas | Power BI | AWS | SageMaker&quot;, </p>
                 <a
                   href="https://github.com/sud0-Su1/imdb-classfication"
                   target="_blank"
@@ -264,7 +264,7 @@ export default function Home() {
                   A real-time sales analytics dashboard built using Python, FastAPI, and Power BI. This project demonstrates modern data engineering practices, real-time data processing, and interactive data visualization.
                 </p>
                 <br />
-                <p>tech: "Python | FastAPI | Power BI | Kafka | AWS | SageMaker", </p>
+                <p>tech: &quot;Python | FastAPI | Power BI | Kafka | AWS | SageMaker&quot;, </p>
                 <a
                   href="https://github.com/sud0-Su1/Realtime_Sales_Analysis"
                   target="_blank"
