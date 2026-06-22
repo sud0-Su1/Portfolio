@@ -35,7 +35,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8 mb-8">
           {/* Profile Card */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto">
             <ProfileCard
               name="IM ABHIK"
               title="Data & AI Engineer"

@@ -95,7 +95,7 @@ export default function Stepper({
         style={{ border: "1px solid #222" }}
       >
         <div
-          className={`${stepContainerClassName} flex w-full items-center p-8`}
+          className={`${stepContainerClassName} flex w-full items-center p-4 sm:p-8`}
         >
           {stepsArray.map((_, index) => {
             const stepNumber = index + 1;
@@ -336,7 +336,7 @@ function StepConnector({ isComplete }: StepConnectorProps) {
   };
 
   return (
-    <div className="relative mx-2 h-0.5 flex-1 overflow-hidden rounded bg-neutral-600">
+    <div className="relative mx-1 sm:mx-2 h-0.5 flex-1 overflow-hidden rounded bg-neutral-600">
       <motion.div
         className="absolute left-0 top-0 h-full"
         variants={lineVariants}

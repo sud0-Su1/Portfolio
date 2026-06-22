@@ -27,7 +27,7 @@ export default function Home() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-9xl justify-center text-center font-bold mb-4"
+              className="text-5xl md:text-7xl lg:text-9xl justify-center text-center font-bold mb-4"
             />
 
             <div className="w-full text-center">
@@ -36,7 +36,7 @@ export default function Home() {
                 animateOn="both"
                 speed={90}
                 maxIterations={20}
-                className="revealed text-6xl  text-white font-light "
+                className="revealed text-4xl sm:text-5xl md:text-6xl text-white font-light"
                 parentClassName="all-letters"
                 encryptedClassName="encrypted"
               />
@@ -74,7 +74,7 @@ export default function Home() {
                 delay={150}
                 animateBy="words"
                 direction="top"
-                className="text-5xl mb-8"
+                className="text-3xl md:text-4xl lg:text-5xl mb-8 px-4"
               />
             </div>
             <div className="flex justify-center">
@@ -94,26 +94,27 @@ export default function Home() {
         {/* Section 3: Full width */}
         <section className="w-full text-white py-12 bg-[#040407]">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="font-light mb-4 justify-center text-8xl text-center">Made with Code</h2>
+            <h2 className="font-light mb-4 justify-center text-5xl md:text-8xl text-center">Made with Code</h2>
 
-            <div style={{ height: '600px', position: 'relative' }}>
-              <div className=" mt-90">
+            <div className="flex flex-col md:block h-auto md:h-[600px] relative w-full pb-[400px] md:pb-0">
+              <div className="mt-8 md:mt-[90px]">
                 <BlurText
                   text="Where Data Meets Intelligence"
                   delay={150}
                   animateBy="words"
                   direction="top"
-                  className="text-7xl"
+                  className="text-4xl md:text-7xl"
                 />
               </div>
-              <div className="text-xl mt-12  max-w-3xl ">
+              <div className="text-lg md:text-xl mt-6 md:mt-12 max-w-3xl relative z-10">
                 <p>
                   Every project I build combines analytics, automation, and AI. I work with data to discover patterns, create meaningful dashboards, develop machine learning models, and design systems that help businesses make smarter decisions.
                 </p>
-                <p className="">
+                <p className="mt-4">
                   From SQL queries and Power BI dashboards to Python-based ML models, NLP applications, and data pipelines, my goal is to build solutions that are practical, scalable, and easy to understand.
                 </p>
               </div>
+              <div className="absolute md:static bottom-0 right-0 w-full md:w-auto h-[400px] md:h-auto mt-12 md:mt-0 flex justify-center md:block">
               <CardSwap
                 cardDistance={60}
                 verticalDistance={70}
@@ -170,14 +171,15 @@ export default function Home() {
                   {/* <p>Your content here</p> */}
                 </Card>
               </CardSwap>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Section 4: Full width */}
         <section className="w-full text-white py-20 bg-[#06060a] mt-70">
-          <div className="max-w-8xl mx-auto px-4 text-center">
-            <h2 className="text-8xl sm:text-5xl font-light leading-tight tracking-tight">
+          <div className="max-w-8xl mx-auto px-4 text-center overflow-hidden">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-light leading-tight tracking-tight">
               Where analytics meets AI  <br className="hidden sm:block" />
               every project turns data into decisions.
             </h2>
@@ -192,9 +194,9 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex justify-center items-stretch gap-x-8 mt-8">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center items-center md:items-stretch gap-8 mt-8">
               <SpotlightCard
-                className="custom-spotlight-card w-80 h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
+                className="custom-spotlight-card w-full max-w-[320px] md:w-80 h-auto min-h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
                 spotlightColor="rgba(7, 91, 94, 0.6)"
               >
                 <h2 className="text-lg font-semibold mb-1">Scalable E-Commerce Analytics Pipeline"</h2>
@@ -214,7 +216,7 @@ export default function Home() {
               </SpotlightCard>
 
               <SpotlightCard
-                className="custom-spotlight-card w-80 h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
+                className="custom-spotlight-card w-full max-w-[320px] md:w-80 h-auto min-h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
                 spotlightColor="rgba(252, 239, 145, 0.4)"
               >
                 <h2 className="text-lg font-light mb-1">Customer Retention & Churn Analytics Dashboard</h2>
@@ -234,7 +236,7 @@ export default function Home() {
               </SpotlightCard>
 
               <SpotlightCard
-                className="custom-spotlight-card w-80 h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
+                className="custom-spotlight-card w-full max-w-[320px] md:w-80 h-auto min-h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
                 spotlightColor="rgba(168, 241, 255, 0.3)"
               >
                 <h2 className="text-lg font-semibold mb-1">Customer Sentiment Analytics</h2>
@@ -254,7 +256,7 @@ export default function Home() {
               </SpotlightCard>
 
               <SpotlightCard
-                className="custom-spotlight-card w-80 h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
+                className="custom-spotlight-card w-full max-w-[320px] md:w-80 h-auto min-h-96 p-4 rounded-lg shadow-md bg-black text-white flex flex-col"
                 spotlightColor="rgba(81, 29, 67, 0.8)"
               >
                 <h2 className="text-lg font-semibold mb-1">Real-Time Sales Analytics Dashboard</h2>

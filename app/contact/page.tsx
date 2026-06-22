@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="max-w-6xl mx-auto px-4">
 
           <div className="py-8">
-            <div className="max-w-2xl mx-auto p-8 text-lg space-y-6">
+            <div className="max-w-2xl mx-auto px-2 sm:px-8 py-8 text-lg space-y-6">
               <Stepper
                 initialStep={1}
                 onStepChange={(step) => console.log(step)}
@@ -58,7 +58,7 @@ export default function Contact() {
                   <h2 className="text-xl mb-4">Lets connect — email me at:</h2>
                   <a
                     href="mailto:Sharanabhik70@gmail.com"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-rose-600 hover:bg-rose-500 rounded-lg transition text-white"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-rose-600 hover:bg-rose-500 rounded-lg transition text-white text-sm md:text-base break-all"
                   >
                     <FaEnvelope className="text-xl" />
                     Sharanabhik70@gmail.com
@@ -107,7 +107,7 @@ export default function Contact() {
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-6xl mb-8"
+            className="text-4xl md:text-6xl mb-8"
           />
         </div>
       </section>
