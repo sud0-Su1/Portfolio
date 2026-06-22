@@ -12,7 +12,7 @@ export default function Contact() {
       {/* Section 1: Hero + Stepper */}
       <section className="bg-black py-10">
         <div className="max-w-6xl mx-auto px-4">
-         
+
           <div className="py-8">
             <div className="max-w-2xl mx-auto p-8 text-lg space-y-6">
               <Stepper
@@ -67,7 +67,7 @@ export default function Contact() {
 
                 <Step>
                   <h1 className="text-2xl font-semibold mb-2">Final Step</h1>
-                  <h2 className="text-xl mb-2">Wanna see the blueprint behind the builds?</h2>
+                  <h2 className="text-xl mb-2">Want to see the blueprint behind the builds?</h2>
                   <p className="mb-4">Scroll down for resume</p>
                   <a
                     href="/resume.pdf"
@@ -84,36 +84,36 @@ export default function Contact() {
         </div>
       </section>
 
- 
-
-    <section className="bg-black py-16">
-  <div className="max-w-6xl mx-auto px-4 text-gray-200 text-left">
-   <ScrollReveal
-  baseOpacity={10}
-  enableBlur={true}
-  baseRotation={20}
-  blurStrength={8}
->
- Whether its open-source passion or full-time innovation — Im always up for bold ideas, meaningful builds, and conversations that spark impact
-</ScrollReveal>
-  </div>
-</section>
 
 
-<section className="bg-black py-16">
-  <div className="max-w-6xl mx-auto px-4">
-     <BlurText
-  text="You made it to the end... or is this just the beginning?"
-  delay={150}
-  animateBy="words"
-  direction="top"
-  className="text-6xl mb-8"
-/>
-  </div>
-</section>
+      <section className="bg-black py-16">
+        <div className="max-w-6xl mx-auto px-4 text-gray-200 text-left">
+          <ScrollReveal
+            baseOpacity={10}
+            enableBlur={true}
+            baseRotation={20}
+            blurStrength={8}
+          >
+            Whether it’s dashboards, ML models, or data pipelines — I’m ready to build solutions that turn data into impact.
+          </ScrollReveal>
+        </div>
+      </section>
+
+
+      <section className="bg-black py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <BlurText
+            text="You made it to the end… now let’s build what’s next."
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="text-6xl mb-8"
+          />
+        </div>
+      </section>
       {/* Section 3: Thanks / Footer */}
-      
-       <footer className="w-full bg-[#07040b] text-gray-400 border-t border-gray-800 mt-4">
+
+      <footer className="w-full bg-[#07040b] text-gray-400 border-t border-gray-800 mt-4">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p className="text-sm">&copy; {new Date().getFullYear()} All rights reserved.</p>
           <div className="flex space-x-4">
@@ -123,7 +123,7 @@ export default function Contact() {
           </div>
         </div>
       </footer>
-      
+
     </main>
   )
 }

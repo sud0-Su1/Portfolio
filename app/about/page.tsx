@@ -38,11 +38,11 @@ export default function About() {
           <div className="flex-shrink-0">
             <ProfileCard
               name="IM ABHIK"
-              title="Software Engineer"
+              title="Data & AI Engineer"
               handle="sud0-su1"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="https://avatars.githubusercontent.com/u/110584674?v=4"
+              avatarUrl="/IMG_1468.JPG"
               showUserInfo={true}
               enableTilt={true}
               onContactClick={() => window.open('https://github.com/sud0-su1', '_blank')}
@@ -59,15 +59,12 @@ export default function About() {
               speed={0.5}
               scrambleChars={'.:'}
             >
-             Im not just a Full Stack Developer — Im a builder of experiences, a solver of data-driven puzzles, and a curious explorer at the crossroads of code and intelligence. I craft web apps that not only work but think — blending sleek UIs, robust backend logic, and the power of machine learning to deliver smarter, faster, and more meaningful digital solutions.
+              I’m Abhik Saran, a Data & AI Engineer focused on analytics, machine learning, and data engineering. I build data pipelines, dashboards, ML models, and AI-powered applications that turn raw data into clear business insights.
 
-From designing responsive frontends that users love to interact with, to engineering backend systems that scale effortlessly — I also dive into the world of data: training models, processing massive datasets, and uncovering insights that power next-gen features.
-
-I believe great software doesnt just function — it learns, adapts, and evolves.
-
+              My work combines Python, SQL, Power BI, PySpark, and cloud platforms to clean, analyze, visualize, and process data at scale. I enjoy solving real-world problems using data-driven thinking, automation, and intelligent systems.
 
             </ScrambledText>
-            
+
             {/* Social Links */}
             <div className="flex flex-wrap gap-4 mt-5">
               <button className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-700 hover:scale-110 transition-all duration-200">
@@ -89,13 +86,66 @@ I believe great software doesnt just function — it learns, adapts, and evolves
             {/* Stack Section */}
             <div>
               <h3 className="text-2xl font-bold mb-2 mt-5">STACK</h3>
-              <div className="flex flex-wrap gap-2">
-                {/* First row of icons */}
-                <img src="https://skillicons.dev/icons?i=git,cpp,java,c,py,eclipse,electron,vscode,apple" alt="Stack icons 1" className="h-10" />
-                {/* Second row of icons */}
-                <img src="https://skillicons.dev/icons?i=html,css,js,discord,figma,gcp,gradle,idea,linux,kali,nodejs,react,express" alt="Stack icons 2" className="h-10" />
-                {/* Third row of icons */}
-                <img src="https://skillicons.dev/icons?i=kafka,matlab,tensorflow,sklearn,pytorch,npm,anaconda" alt="Stack icons 3" className="h-10" />
+              <div className="flex flex-col gap-4">
+                {/* Core Programming / Tools */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://skillicons.dev/icons?i=py,mysql,postgres,git,github,vscode,linux,anaconda"
+                    alt="Core programming and tools"
+                    className="h-10"
+                  />
+                </div>
+
+                {/* AI / ML */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn"
+                    alt="AI and machine learning stack"
+                    className="h-10"
+                  />
+                </div>
+
+                {/* Cloud / Data Engineering */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://skillicons.dev/icons?i=azure,aws,gcp,kafka,docker"
+                    alt="Cloud and data engineering stack"
+                    className="h-10"
+                  />
+                </div>
+
+                {/* Data Analytics / BI / Libraries */}
+                <div className="flex flex-wrap gap-2">
+                  <img src="https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=database&logoColor=white" alt="SQL" />
+                  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+                  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel" />
+                  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+                  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+                  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+                  <img src="https://img.shields.io/badge/Seaborn-4B8BBE?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn" />
+                  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
+                </div>
+
+                {/* Big Data / ETL */}
+                <div className="flex flex-wrap gap-2">
+                  <img src="https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="PySpark" />
+                  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark" />
+                  <img src="https://img.shields.io/badge/Azure%20Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Azure Databricks" />
+                  <img src="https://img.shields.io/badge/Delta%20Lake-00ADEF?style=for-the-badge&logo=databricks&logoColor=white" alt="Delta Lake" />
+                  <img src="https://img.shields.io/badge/Apache%20Hive-FDEE21?style=for-the-badge&logo=apachehive&logoColor=black" alt="Apache Hive" />
+                  <img src="https://img.shields.io/badge/ETL%20Pipelines-0F172A?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="ETL Pipelines" />
+                </div>
+
+                {/* Extra Professional Skills */}
+                <div className="flex flex-wrap gap-2">
+                  <img src="https://img.shields.io/badge/Data%20Cleaning-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Data Cleaning" />
+                  <img src="https://img.shields.io/badge/EDA-7C3AED?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="EDA" />
+                  <img src="https://img.shields.io/badge/Data%20Visualization-DB2777?style=for-the-badge&logo=powerbi&logoColor=white" alt="Data Visualization" />
+                  <img src="https://img.shields.io/badge/KPI%20Reporting-16A34A?style=for-the-badge&logo=googlesheets&logoColor=white" alt="KPI Reporting" />
+                  <img src="https://img.shields.io/badge/Machine%20Learning-9333EA?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="Machine Learning" />
+                  <img src="https://img.shields.io/badge/Business%20Intelligence-CA8A04?style=for-the-badge&logo=powerbi&logoColor=white" alt="Business Intelligence" />
+                  <img src="https://img.shields.io/badge/Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle Cloud" />
+                </div>
               </div>
             </div>
           </div>
@@ -110,21 +160,24 @@ I believe great software doesnt just function — it learns, adapts, and evolves
                 <h2 className="text-2xl font-bold">SKILLS</h2>
                 <Star className="text-white/70" size={24} />
               </div>
-              <div className="space-y-2">
-                <div className="text-white/90">Full Stack Devloper</div>
-                <div className="text-white/90">Machine Learning</div>
-                <div className="text-white/90">Deep Learning</div>
-                <div className="text-white/90">Model Deployment</div>
-                <div className="text-white/90">Big Data</div>
-              </div>
+              <ul className="space-y-3 text-gray-200">
+                <li>Data Analytics</li>
+                <li>Machine Learning</li>
+                <li>Business Intelligence</li>
+                <li>Power BI Dashboards</li>
+                <li>ETL Pipelines</li>
+                <li>Big Data Processing</li>
+                <li>Data Visualization</li>
+                <li>Cloud Data Platforms</li>
+              </ul>
             </div>
             {/* AKA Section */}
             <div className="bg-gray-900 rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4">AKA.</h3>
               <p className="text-gray-300">
-  Within the realm of developers, I'm recognized by the alias <span className="italic">StackCraft</span>, 
-  a name I've carried since the early days of my journey through code and creation.
-</p>
+                Known as <span className="italic">sud0-su1</span>, I turn raw data into dashboards,
+                ML models, AI apps, and business-ready insights.
+              </p>
             </div>
           </div>
           {/* Right Column: Time, Profile Image, Ready */}
@@ -145,10 +198,10 @@ I believe great software doesnt just function — it learns, adapts, and evolves
                 />
               </div>
               <div className="mt-3 text-sm text-gray-400 ">
-                Living between semicolons and server logs.
-                </div>
+                Turning raw data into insights, models, and intelligent systems.
+              </div>
             </div>
-           
+
           </div>
         </div>
       </div>
