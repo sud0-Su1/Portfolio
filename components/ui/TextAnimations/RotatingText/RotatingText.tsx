@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /*
 	Installed from https://reactbits.dev/ts/tailwind/
 */
@@ -14,9 +15,9 @@ import {
   motion,
   AnimatePresence,
   Transition,
+  animationControls,
   type VariantLabels,
   type Target,
-  type AnimationControls,
   type TargetAndTransition,
 } from "framer-motion";
 
@@ -39,7 +40,7 @@ export interface RotatingTextProps
   texts: string[];
   transition?: Transition;
   initial?: boolean | Target | VariantLabels;
-  animate?: boolean | VariantLabels | AnimationControls | TargetAndTransition;
+  animate?: boolean | VariantLabels | ReturnType<typeof animationControls> | TargetAndTransition;
   exit?: Target | VariantLabels;
   animatePresenceMode?: "sync" | "wait";
   animatePresenceInitial?: boolean;
@@ -241,9 +242,9 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
                   {wordObj.characters.map((char, charIndex) => (
                     <motion.span
                       key={charIndex}
-                      initial={initial}
-                      animate={animate}
-                      exit={exit}
+                      initial={initial as any}
+                      animate={animate as any}
+                      exit={exit as any}
                       transition={{
                         ...transition,
                         delay: getStaggerDelay(

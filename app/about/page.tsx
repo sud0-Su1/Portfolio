@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Hero from '@/components/hero';
-import { Star, Instagram, Grid3X3, Github } from 'lucide-react';
+import { Star, Grid3X3, Github } from 'lucide-react';
 import ProfileCard from '@/components/ui/Components/ProfileCard/ProfileCard';
 import ScrambledText from '@/components/ui/TextAnimations/ScrambledText/ScrambledText';
 
